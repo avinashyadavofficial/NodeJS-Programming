@@ -96,3 +96,4 @@ console.log(null+undefined);//NaN=> 0+NaN => NaN
 
 
 
+
