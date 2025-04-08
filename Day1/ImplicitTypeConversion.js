@@ -90,6 +90,12 @@ false==false=> true
 console.log(!"3");//false
 console.log(!"");//true
 console.log(null+undefined);//NaN=> 0+NaN => NaN
+console.log([]==="");//false
+console.log([]=="");   //true
+
+
+
+
 
 
 
