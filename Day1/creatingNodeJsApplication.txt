@@ -1,0 +1,5 @@
+3 important components:
+
+1. Import required modules 
+2.  Create Server 
+3. Read request and return response
