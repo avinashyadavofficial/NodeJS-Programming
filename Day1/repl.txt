@@ -1,0 +1,9 @@
+-> REPL:   Read,Eval, Print, Loop
+->  interactive programming environment that allows users to run the JavaScript code directly in the 
+    terminal.
+-> .exit = exit 
+-> .clear
+-> .save
+-> .load  :  loads a file into the REPL session.
+-> .editor : enters the multiline editor mode.
+
