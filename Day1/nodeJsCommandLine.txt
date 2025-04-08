@@ -1,0 +1,19 @@
+node file.js : To run the file
+
+node --help: For help
+
+node --version or node -v : to check version
+
+-e or --eval : executes the JavaScript code directly from the command line 
+               node -e ("console.log('hello')") which prints hello
+
+-p or --print :  prints the result of the given JavaScript expression
+                node -p "112 - 321";  which give -209
+                
+--check or -c : check the syntax of the JavaScript file without executing it
+                node --check a.js
+                This command will not produce any output, if there are no syntax errors. 
+            If there are any errors, it will display the error message and indicate the error line
+
+
+
