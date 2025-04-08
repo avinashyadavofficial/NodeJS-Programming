@@ -1,0 +1,33 @@
+-> default package manager for the Node.js
+-> helps the user to manage the JavaScript packages, libraries and dependencies efficiently.
+-> can install, update and manage the packages for the Node.js.
+-> to check npm version
+   npm -v 
+
+-> to install package:
+   npm install <package-name>@<version>
+   eg: npm install express@4.17.1
+
+-> Benefits of local installation: version control , Security
+
+->  Package Installation with Flags:
+    1. --save-dev : It installs the package as a development dependency
+    2. --save-exact:  It installs the package and locks the exact version in the package.json.
+    3. --no-save:  installs the package without adding it to the package.json
+
+-> npm install -g <package-name> : to install a package globally
+   npm install -g nodemon
+
+-> npm outdated -g:  for checking the outdated global packages
+
+-> npm update -g <package-name> : Updating the global package
+
+-> npm list : Listing Installed Packages
+
+-> npm list -g --depth=0 : listing globally installed packages.
+
+-> npm show <package-name> versions : For checking all available versions:
+
+-> npm uninstall <package-name> : removing a package
+-> npm uninstall -g <package-name> : globally
+
