@@ -13,3 +13,6 @@ else{
     alert(name+" u r not eligible")
 }
 
+//prompt() returns "" or null
+//confirm() returns false for Cancel
+//prompt() always returns string (or null)
