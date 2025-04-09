@@ -20,7 +20,7 @@ console.log([1,2,3].includes(2));
 const sum = (a, b) => a + b;
 
 //after transpile
-var sum1 = function(a, b) {
+let sum1 = function(a, b) {
   return a + b;
 };
 
