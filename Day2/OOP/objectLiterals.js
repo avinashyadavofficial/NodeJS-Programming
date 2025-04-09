@@ -17,6 +17,10 @@ class Person{
         console.log(`Name is ${this.name} and age is ${this.age}`);
     }
 }
-const p=new Person("Avi",22);
+const p=new Person("Avi",22); //constructor runs
 p.greet();
-console.log(p.address?.city);
+console.log(p.address?.city); //undefined
+let a=p.greet();
+console.log(a);//undefined
+
+
