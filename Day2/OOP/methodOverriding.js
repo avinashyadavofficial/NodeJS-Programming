@@ -39,20 +39,23 @@ d.x(); //Parent
 
 //example
 class Fruit{
-    static print(){
+     print(){
         console.log("Fruit");
     }
 }
 class Apple extends Fruit {
     print(){
         console.log("Apple");
-        Fruit.print.call(this); // instead of writing this and static in parent class 
-                                // we can use super(print);
+        super.print();     //Fruit.print.call(this); // instead of writing this and static in parent class 
+                                // we can use  super.print();
 
-    }
+}
 }
 const ap=new Apple();
 ap.print();
+//Apple
+//Fruit
+
 
 
 
