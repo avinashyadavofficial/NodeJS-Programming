@@ -33,3 +33,22 @@ function sum(...nums) {
 }
 
 console.log(sum(1, 2, 3)); // 6
+
+function sum(...nums) {
+  return nums.reduce((a, b) => a + b, 0);
+}
+
+console.log(sum(1, 2, 3));       // 6
+console.log(sum(5, 10, 15, 20)); // 50
+
+
+function greet(first, ...others) {
+  console.log("Hello", first);
+  console.log("Other people:", others);
+}
+
+greet("A", "B", "C");
+// Hello A
+// Other people: ['B', 'C']
+
+
