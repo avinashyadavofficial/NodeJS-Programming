@@ -22,6 +22,19 @@ const greet = function sayHello() {
   greet();           
   console.log(typeof sayHello); // undefined
   console.log(typeof greet);//function
+
+
+  const sayHi1 = function greet1(name) {
+    if (name) {
+      console.log(`Hi, ${name}!`);
+    } else {
+      greet1("Code Ninja");
+    }
+  };
+  
+  const greet1 = "Shadowed!";
+  
+  sayHi1(); // Hi, Code Ninja
   
   
   
