@@ -9,3 +9,22 @@ sum(1,4,6,9);  //[ 1, 4, 6, 9 ]
 
 // function log(...args, message) {} // ❌ SyntaxError
 
+const user = {
+  name: "Alice",
+  age: 30,
+  location: "Wonderland",
+  hobby: "Chess"
+};
+
+const { name, ...rest } = user;
+
+console.log(name);
+console.log(rest);
+
+// Alice
+// { age: 30, location: 'Wonderland', hobby: 'Chess' }
+
+// Feature	Syntax	Meaning	Used In
+// Rest	...args	Collect to array	Function params
+// Spread	...arr	Expand from array	Function calls, arrays, objects
+
