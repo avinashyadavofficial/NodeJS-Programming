@@ -18,3 +18,9 @@ const c = { ...a, ...b };
 console.log(c);// { x: 1, y: 2 }
 
 
+//copying objects
+const person = { name: "Avi", age: 25 };
+const clone = { ...person, age: 26 };
+console.log(clone); // { name: 'Avi', age: 26 }
+
+
