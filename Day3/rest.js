@@ -28,3 +28,8 @@ console.log(rest);
 // Rest	...args	Collect to array	Function params
 // Spread	...arr	Expand from array	Function calls, arrays, objects
 
+function sum(...nums) {
+  return nums.reduce((a, b) => a + b);
+}
+
+console.log(sum(1, 2, 3)); // 6
