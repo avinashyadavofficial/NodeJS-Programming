@@ -19,3 +19,13 @@ student.hello();//Hi Avi
 student.hello.call(user); //Hi Avinash
 
 //.call() lets you borrow a method from one object and use it with another.
+
+function greet(greeting, punctuation) {
+    console.log(greeting + ', ' + this.name + punctuation);
+}
+
+const person = {
+    name: 'Avinash'
+};
+
+greet.call( person,"hello","!"); //hello, Avinash!
