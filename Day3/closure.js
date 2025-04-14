@@ -28,12 +28,24 @@ b();//1
 //   }
 // // 3 3 3
 
+//using var with IIFE(Immediately invoked function expression)
+for (var i = 0; i < 3; i++) {
+    (function (j) {
+      setTimeout(function () {
+        console.log(j);
+      }, 1000);
+    })(i);
+  }
+// 1 2 3
+  
+
 // for (let i = 0; i < 3; i++) {
 //     setTimeout(function () {
 //       console.log(i);
 //     }, 1000);
 //   }
 // // 0 1 2
+
 
 //Not a closure
 // function sol(){
