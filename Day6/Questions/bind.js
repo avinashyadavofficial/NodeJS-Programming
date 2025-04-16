@@ -9,4 +9,3 @@ const person = { name: "Avi" };
 const a = sayName.bind(person);
 
 a(); // Avi
-
