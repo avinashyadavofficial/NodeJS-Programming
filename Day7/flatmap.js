@@ -29,3 +29,8 @@ const arr=[ [ [1, 2], [3, [4]] ], [ [5], [6, [7, 8]] ] ];
 console.log(flatMapDeep(arr,a=>a*2));
 
   
+const arr1=[1,2,[3,4]];
+let ans=arr1.flatMap(a=>a);
+console.log(ans);
+let ans1 = arr1.flatMap(a => Array.isArray(a) ? a.map(x => x * 10) : [a * 10]);
+console.log(ans1)
