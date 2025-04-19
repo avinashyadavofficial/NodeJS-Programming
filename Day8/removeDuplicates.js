@@ -13,11 +13,7 @@ class Stack {
         this.s.push(element);
     }
     pop() {
-        if (this.isEmpty()) {
-            return "Empty Stack";
-        } else {
-            return this.s.pop();
-        }
+        return this.s.pop();
     }
     peek() {
         return this.s[this.s.length - 1];
@@ -25,13 +21,22 @@ class Stack {
     isEmpty() {
         return this.s.length === 0;
     }
-    size() {
-        return this.s.length;
-    }
-    clear() {
-        this.s = [];
-    }
-    print() {
-        console.log(this.s);
+    toString() {
+        return this.s.join('');
     }
 }
+
+function sol(str) {
+    let stack = new Stack();
+    for (let char of str) {
+        if (!stack.isEmpty() && stack.peek() === char) {
+            stack.pop();
+        } else {
+            stack.push(char);
+        }
+    }
+    return stack.toString();
+}
+
+console.log(sol("abbaca"));  // Output: "ca"
+
